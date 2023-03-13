@@ -17,6 +17,8 @@
 启动 ./koko-moni
 
 ## UI
+注: web无登陆界面 直接访问 `/?key=secret_key` 鉴权  secret_key不正确时被RST连接为正常现象 key不正确触发反测绘
+
 ![图片.png](./img/1.png)
 
 ![图片.png](./img/2.png)
