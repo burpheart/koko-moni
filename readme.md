@@ -205,8 +205,6 @@ time(timestamp) >= 2022-01-08T05:55:22.200Z
 
 | 参数名 | 必选 | 类型 | 说明 |
 | --- | --- | --- | --- |
-| current | 是 | int | 当前页数 |
-| pageSize | 是 | int | 每页数据量 |
 | query | 是 | string | ZQ查询语句 |
 
 响应格式: JSON
