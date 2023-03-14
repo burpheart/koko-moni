@@ -22,7 +22,7 @@ global: #全局配置 启动时会触发一次所有的任务
   quake_cookies: "" #quake登陆后 cookies
   threatbook_cookies: "" #微步登陆后  cookies  注意用量 频繁会触发验证码 强制退出登陆
   fofa_email: "" #  FOFA 邮箱
-  fofa_key: ""#  FOFA KEY
+  fofa_key: "" #  FOFA KEY
   save_path: "./data" #数据保存位置
   ip: "127.0.0.1" #api 监听ip
   port: "12347" #api 端口
@@ -57,6 +57,7 @@ jobs:
   fofa_query: "domain=\"bilibili.com\""
   fofa_page: 10
 ```
+
 
 启动 ./koko-moni
 
@@ -148,6 +149,29 @@ time(timestamp) >= 2022-01-08T05:55:22.200Z
 输出  `key,count()`
 与sort组合使用
 `count() by title|sort -r count`
+
+
+## TOOD
+
+- [x] fofa API 支持
+- [x] Hunter API 支持
+- [x] Zoomeye API 支持
+- [x] Quake 支持
+- [x] Threatbook 支持
+- [x] WEB数据清洗
+- [ ] 非WEB数据清洗
+- [ ] WEB UI
+    - [x] 搜索
+    - [ ] 任务管理
+    - [ ] 系统设置
+    - [ ] 资产统计
+
+
+
+## 已知问题
+
+- 示例配置文件 fofa_key: ""后少一个空格
+- hunter web banner 异常 api返回到的不是对应host的返回(hunter的问题)
 
 
 
