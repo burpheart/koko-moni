@@ -172,7 +172,8 @@ time(timestamp) >= 2022-01-08T05:55:22.200Z
 
 - 示例配置文件 fofa_key: ""后少一个空格
 - hunter web banner 异常 api返回到的不是对应host的返回(hunter的问题)
-
+- 微步频繁请求API会封号
+- 多任务同时执行时可能会只执行最后一个任务
 
 
 
